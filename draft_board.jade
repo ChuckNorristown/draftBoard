@@ -14,7 +14,7 @@ html
       .navbar.navbar-inverse
         .container
           .navbar-header
-            a.navbar-brand(href='#') Current Pick
+            .navbar-fixed-top Current Pick
             .clock
               img(src='assets/images/clock.png')
             ul.nav.navbar-nav.navbar-right
@@ -26,6 +26,10 @@ html
         // /.container
     .rounds(style='top: 40px; left: 5px; width: 36px; line-height: 65px; display: block; padding-left: 25px;')
     br
+    .container-fluid
+      .row-fluid
+        .span12
+          // Body content
     .btn-block
       .round(style='height: 63px;')
         | 1
@@ -282,3 +286,5 @@ html
           button.btn.btn-primary(type='button') Team Name
           button.btn.btn-primary(type='button') Team Name
           button.btn.btn-primary(type='button') Team Name
+    .span2
+          // Sidebar content

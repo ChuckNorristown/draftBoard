@@ -304,10 +304,6 @@ button, input, select[multiple], textarea {
   background-image: none;
 }
 
-.clock {
-  margin: 12px 32px;
-}
-
 a {
   color: #ffffff;
   text-decoration: none;
@@ -4477,8 +4473,17 @@ textarea.input-group-sm > {
 }
 
 .navbar-fixed-top {
-  top: 0;
+  top: 5px;
   z-index: 1030;
+  padding-left: 38px;
+  font-size: 35px;
+}
+
+.clock {
+  position: fixed;
+  right: 0px;
+  left: 118px;
+  margin: 13px 125px;
 }
 
 .navbar-fixed-bottom {
@@ -4487,7 +4492,7 @@ textarea.input-group-sm > {
 }
 
 .navbar-brand {
-  float: left;
+  fixed: left;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;

@@ -15,24 +15,15 @@ html
         .container
           .navbar-header
             a.navbar-brand(href='#') Current Pick
-          .navbar-collapse.collapse.navbar-inverse-collapse
-            ul.nav.navbar-nav
-              li.active
-                a(href='#') On Deck
             ul.nav.navbar-nav.navbar-right
               .bs-example
                 .btn-toolbar(style='margin: 0;')
-                  .btn-group
-                    button.btn.btn-success(type='button') Targets
-                    button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown')
-                      span.caret
-                    ul.dropdown-menu
-                      li
-                        a(href='#') Targets
                   // /btn-group
                 // /btn-toolbar
           // /.nav-collapse
         // /.container
+            a.btn.btn-success.btn-large(href='#')
+      i.icon-white.icon-time
     .progress.progress-striped.active
       .progress-bar(style='width: 88%;')
     .rounds(style='top: 40px; left: 5px; width: 36px; line-height: 65px; display: block; padding-left: 25px;')

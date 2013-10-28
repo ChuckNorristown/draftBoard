@@ -2830,19 +2830,19 @@ fieldset[disabled] .form-control + .input-icon,
     background-image: url(../images/tile/ribbon-2x.png);
   }
 }
-.todo {
+.player {
   color: #798795;
   margin-bottom: 20px;
   border-radius: 6px;
 }
-.todo ul {
+.player ul {
   background-color: #2c3e50;
   margin: 0;
   padding: 0;
   list-style-type: none;
   border-radius: 0 0 6px 6px;
 }
-.todo li {
+.player li {
   background: #34495e url(../images/todo/todo.png) 92% center no-repeat;
   background-size: 20px 20px;
   cursor: pointer;
@@ -2854,30 +2854,32 @@ fieldset[disabled] .form-control + .input-icon,
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-.todo li:first-child {
+.player li:first-child {
   margin-top: 0;
 }
-.todo li:last-child {
+.player li:last-child {
   border-radius: 0 0 6px 6px;
   padding-bottom: 21px;
 }
-.todo li.todo-done {
+.player li.player-done {
   background: transparent url(../images/todo/done.png) 92% center no-repeat;
   background-size: 20px 20px;
   color: #1abc9c;
 }
-.todo li.todo-done .todo-name {
+.player li.player-done .player-name {
   color: #1abc9c;
 }
-.todo-search {
+.player-search {
   position: relative;
   background: #1abc9c;
   background-size: 16px 16px;
-  border-radius: 6px 6px 0 0;
+  border-radius: 0 0 6px 6px;
   color: #34495e;
   padding: 19px 25px 20px;
+  width: 22%;
+  margin: -8% 0 2% 78%;
 }
-.todo-search:before {
+.player-search:before {
   position: absolute;
   font-family: 'Flat-UI-Icons';
   content: "\e01c";
@@ -2885,10 +2887,10 @@ fieldset[disabled] .form-control + .input-icon,
   line-height: 17px;
   display: inline-block;
   top: 50%;
-  left: 92%;
+  left: 41%;
   margin: -0.5em 0 0 -1em;
 }
-input.todo-search-field {
+input.player-search-field {
   background: none;
   border: none;
   color: #34495e;
@@ -2901,40 +2903,40 @@ input.todo-search-field {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-input.todo-search-field:-moz-placeholder {
+input.player-search-field:-moz-placeholder {
   color: #34495e;
 }
-input.todo-search-field::-moz-placeholder {
+input.player-search-field::-moz-placeholder {
   color: #34495e;
 }
-input.todo-search-field:-ms-input-placeholder {
+input.player-search-field:-ms-input-placeholder {
   color: #34495e;
 }
-input.todo-search-field::-webkit-input-placeholder {
+input.player-search-field::-webkit-input-placeholder {
   color: #34495e;
 }
-input.todo-search-field.placeholder {
+input.player-search-field.placeholder {
   color: #34495e;
 }
-.todo-icon {
+.player-icon {
   float: left;
   font-size: 24px;
   padding: 11px 22px 0 0;
 }
-.todo-content {
+.player-content {
   padding-top: 1px;
   overflow: hidden;
 }
-.todo-name {
+.player-name {
   color: #ffffff;
   font-size: 17px;
   margin: 1px 0 3px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
-  .todo li {
+  .player li {
     background-image: url(../images/todo/todo-2x.png);
   }
-  .todo li.todo-done {
+  .player li.player-done {
     background-image: url(../images/todo/done-2x.png);
   }
 }

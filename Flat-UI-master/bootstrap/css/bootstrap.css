@@ -48,6 +48,7 @@ html {
 
 body {
   margin: 0;
+  background: url('chalkboard.jpg') repeat;
 }
 
 a {
@@ -256,6 +257,7 @@ table {
   }
   @page  {
     margin: 2cm .5cm;
+
   }
   p,
   h2,

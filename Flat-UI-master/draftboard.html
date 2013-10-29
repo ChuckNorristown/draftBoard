@@ -19,69 +19,91 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container">
-      <h3 class="demo-panel-title">Current Pick</h3>
-      <div class="player-search">
-        <input class="player-search-field" type="search" value="" placeholder="Player">
-      </div>
-      <div class="row demo-row">
-        <div class="col-md-12">
-          <div class="navbar navbar-inverse">
-            <div class="navbar-header"></div>
+      <div class="container">
+        <h3 class="demo-panel-title">Current Pick</h3>
+        <div class="player-search">
+          <input class="player-search-field" type="search" value="" placeholder="Player">
+        </div>
+        <div class="row demo-row">
+          <div class="col-md-12">
+            <div class="navbar navbar-inverse">
+              <div class="navbar-header style="position:fixed;""></div>
               <div class="col-md-12">
                 <div class="col-md-2">
-                  <select name="herolist" value="QB" class="select-block" style="display: none;">
-                    <option value="0">QB's</option>
-                    <option value="QB1">QB1</option>
-                    <option value="QB2">QB2</option>
-                    <option value="Qb3">QB3</option>
-                    <option value="QB4">QB4</option>
-                  </select>
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-default">QB's</button>
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" data-option="QB1">QB1</a></li>
+                    <li><a href="#" data-option="QB2">QB2</a></li>
+                    <li><a href="#" data-option="QB3">QB3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Search</a></li>
+                  </ul>
+                </div>
               </div>
                 <div class="col-md-2">
-                  <select name="herolist" value="RB" class="select-block" style="display: none;">
-                    <option value="0">RB</option>
-                    <option value="1">RB1</option>
-                    <option value="2">RB2</option>
-                    <option value="3">RB3</option>
-                    <option value="4">RB4</option>
-                  </select>
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-success">RB's</button>
+                  <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">RB1</a></li>
+                    <li><a href="#">RB2</a></li>
+                    <li><a href="#">RB3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Search</a></li>
+                  </ul>
+                </div>
               </div>
               <div class="col-md-2">
-                  <select name="herolist" value="WR" class="select-block" style="display: none;">
-                    <option value="0">WR</option>
-                    <option value="1">WR1</option>
-                    <option value="2">WR2</option>
-                    <option value="3">WR3</option>
-                    <option value="4">WR4</option>
-                  </select>
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-primary">WR's</button>
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">WR1</a></li>
+                    <li><a href="#">WR2</a></li>
+                    <li><a href="#">WR3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Search</a></li>
+                  </ul>
+                </div>
               </div>
               <div class="col-md-2">
-                  <select name="herolist" value="TE" class="select-block" style="display: none;">
-                    <option value="0">TE</option>
-                    <option value="1">TE1</option>
-                    <option value="2">TE2</option>
-                    <option value="3">TE3</option>
-                    <option value="4">TE4</option>
-                  </select>
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-info">TE's</button>
+                  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">TE1</a></li>
+                    <li><a href="#">TE2</a></li>
+                    <li><a href="#">TE3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Search</a></li>
+                  </ul>
+                </div>
               </div>
               <div class="col-md-2">
-                  <select name="herolist" value="DEF/SPT" class="select-block" style="display: none;">
-                    <option value="0">DEF/SPT</option>
-                    <option value="1">DEF/SPT1</option>
-                    <option value="2">DEF/SPT2</option>
-                    <option value="3">DEF/SPT3</option>
-                    <option value="4">DEF/SPT4</option>
-                  </select>
-              </div>
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-warning">DEF/SPT's</button>
+                  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">DEF/SP1</a></li>
+                    <li><a href="#">DEF/SP2</a></li>
+                    <li><a href="#">DEF/SP3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Search</a></li>
+                  </ul>
+                </div>              </div>
               <div class="col-md-2">
-                  <select name="herolist" value="K" class="select-block" style="display: none;">
-                    <option value="0">K</option>
-                    <option value="1">K1</option>
-                    <option value="2">K2</option>
-                    <option value="3">K3</option>
-                    <option value="4">K4</option>
-                  </select>
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-danger">K's</button>
+                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">K1</a></li>
+                    <li><a href="#">K2</a></li>
+                    <li><a href="#">K3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Search</a></li>
+                  </ul>
               </div>
             </div>
           </div>

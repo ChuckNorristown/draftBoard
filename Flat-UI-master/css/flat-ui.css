@@ -199,7 +199,7 @@ you can use the generic selector below, but it's slower:
 body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 1.72222;
+  line-height: 3.72222;
   color: #34495e;
   background-color: #ffffff;
 }
@@ -315,7 +315,7 @@ h1,
 h2,
 h3 {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 h4,
 h5,
@@ -2871,11 +2871,11 @@ fieldset[disabled] .form-control + .input-icon,
 }
 .player-search {
   position: relative;
-  background: #1abc9c;
+  background: #34495e;;
   background-size: 16px 16px;
   border-radius: 0 0 6px 6px;
-  color: #34495e;
-  padding: 19px 25px 20px;
+  color: #bdc3c7;
+  padding: 0px 25px 20px;
   width: 22%;
   margin: -8% 0 2% 78%;
 }
@@ -2893,7 +2893,7 @@ fieldset[disabled] .form-control + .input-icon,
 input.player-search-field {
   background: none;
   border: none;
-  color: #34495e;
+  color: #bdc3c7;
   font-size: 19px;
   font-weight: 700;
   margin: 0;

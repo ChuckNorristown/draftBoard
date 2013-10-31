@@ -24,6 +24,23 @@
         <div ng-controller="PlayerCtrl">
 <!--         <select name="herolist" value="players" class="select-block" style="display: none;"> -->
           <a href="" ng-click="draft()"><button type="button" class="btn btn-success">Players</button></a>
+              <ul class="unstyled">
+            <li ng-repeat="player in availablePlayers">
+              <input type="checkbox" ng-model="player.done">
+              <span class="done-{{player.done}}">{{player.text}}</span>
+            </li>
+          </ul>
+          <form ng-submit="addPlayer()">
+            <input type="text" ng-model="playerText"  size="30"
+                   placeholder="add new player here">
+            <input class="btn-primary" type="submit" value="add">
+          </form>
+          <ul class="unstyled">
+            <li ng-repeat="player in draftedPlayers">
+              <span class="done-{{player.done}}">{{player.text}}</span>
+            </li>
+          </ul>
+        </div>
           <!-- <option value="0">Choose Player</option>
           <option value="1">QB</option>
           <option value="2">RB</option>
@@ -281,7 +298,6 @@
       <script src="js/jquery.placeholder.js"></script>
       // <!-- <script src="js/jquery.js"></script> -->        
       <script src="js/application.js"></script>
-      <script src="js/jsonLoader.js"></script>
       <script src="js/player-select.js"></script>
     </div>
   </body>

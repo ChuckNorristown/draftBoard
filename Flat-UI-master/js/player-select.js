@@ -1,7 +1,7 @@
 function PlayerCtrl($scope) {
   $scope.availablePlayers = [];
 
-  $.getJSON('player_pool.json', function(data) {
+  $.getJSON('json/player-pool.json', function(data) {
     $.each(data.players.player, function(i, p) {
       $scope.availablePlayers.push({text:p.name, done:false});
      });

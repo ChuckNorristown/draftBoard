@@ -22,7 +22,7 @@
     };
 
     $(document).on('click', '.dropdown-menu li a', function () {
-    console.log("Selected Option:"+$(this).text());
+        console.log("Selected Option:"+$(this).text());
     });
 
     Selectpicker.prototype = {

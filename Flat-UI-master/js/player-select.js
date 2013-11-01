@@ -3,7 +3,7 @@ function PlayerCtrl($scope) {
 
   $.getJSON('json/player-pool.json', function(data) {
     $.each(data.players.player, function(i, p) {
-      $scope.availablePlayers.push({text:p.name, done:false});
+      $scope.availablePlayers.push({text:p.name + " " + p.position, done:false});
      });
    });
 

@@ -22,7 +22,6 @@
       <h1>Your Draft Crap</h1>
       <p><a <div class="col-md-2">
         <div ng-controller="PlayerCtrl">
-<!--         <select name="herolist" value="players" class="select-block" style="display: none;"> -->
           <a href="" ng-click="draft()"><button type="button" class="btn btn-success">Players</button></a>
               <ul class="unstyled">
             <li ng-repeat="player in availablePlayers">
@@ -35,15 +34,6 @@
               <span class="done-{{player.done}}">{{player.text}}</span>
             </li>
           </ul>
-        </div>
-          <!-- <option value="0">Choose Player</option>
-          <option value="1">QB</option>
-          <option value="2">RB</option>
-          <option value="3">WR</option>
-          <option value="4">TE</option>
-          <option value="5">DEF</option>
-          <option value="6">K</option>
-          </select></p></a> -->
         </div>
     </div>
     <div class="col-lg-12">

@@ -26,7 +26,7 @@
       <input type="text" class="form-control" placeholder="Search">
     </div>
         <ul class="nav navbar-nav navbar-left">
-          <div ng-controller="PlayerCtrl">
+          <div ng-controller="QBPlayerCtrl">
             <li class="dropdown">
               <a href="" ng-click="draft()" href="#" class="dropdown-toggle" data-toggle="dropdown">QB <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -42,7 +42,7 @@
           </div>
         </ul>
         <ul class="nav navbar-nav navbar-left">
-          <div ng-controller="PlayerCtrl">
+          <div ng-controller="RBPlayerCtrl">
             <li class="dropdown">
               <a href="" ng-click="draft()" href="#" class="dropdown-toggle" data-toggle="dropdown">RB <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -58,7 +58,7 @@
           </div>
         </ul>
         <ul class="nav navbar-nav navbar-left">
-          <div ng-controller="PlayerCtrl">
+          <div ng-controller="WRPlayerCtrl">
             <li class="dropdown">
               <a href="" ng-click="draft()" href="#" class="dropdown-toggle" data-toggle="dropdown">WR <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -74,7 +74,7 @@
           </div>
         </ul>
          <ul class="nav navbar-nav navbar-left">
-          <div ng-controller="PlayerCtrl">
+          <div ng-controller="TEPlayerCtrl">
             <li class="dropdown">
               <a href="" ng-click="draft()" href="#" class="dropdown-toggle" data-toggle="dropdown">TE <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -90,7 +90,7 @@
           </div>
         </ul>
         <ul class="nav navbar-nav navbar-left">
-          <div ng-controller="PlayerCtrl">
+          <div ng-controller="DefPlayerCtrl">
             <li class="dropdown">
               <a href="" ng-click="draft()" href="#" class="dropdown-toggle" data-toggle="dropdown">DEF <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -106,7 +106,7 @@
           </div>
         </ul>
         <ul class="nav navbar-nav navbar-left">
-          <div ng-controller="PlayerCtrl">
+          <div ng-controller="KPlayerCtrl">
             <li class="dropdown">
               <a href="" ng-click="draft()" href="#" class="dropdown-toggle" data-toggle="dropdown">K <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -135,9 +135,14 @@
       <script src="js/flatui-radio.js"></script>
       <script src="js/jquery.tagsinput.js"></script>
       <script src="js/jquery.placeholder.js"></script>
-      <!-- <script src="js/jquery.js"></script> -->        
+      <script src="js/jquery.js"></script>        
       <script src="js/application.js"></script>
-      <script src="js/player-select.js"></script>
+      <script src="js/def-select.js"></script>
+      <script src="js/qb-select.js"></script>
+      <script src="js/rb-select.js"></script>
+      <script src="js/wr-select.js"></script>
+      <script src="js/te-select.js"></script>
+      <script src="js/k-select.js"></script>
     </div>
   </body>
 </html>

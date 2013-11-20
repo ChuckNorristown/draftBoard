@@ -1,11 +1,11 @@
-function DefPlayerCtrl($scope) {
+function RBPlayerCtrl($scope) {
   $scope.availablePlayers = [];
 
   $.getJSON('json/player-pool.json', function(data) {
     $.each(data.players.player, function(i, p) {
-        if (p.position == "Def") {
-      $scope.availablePlayers.push({text:p.name + " - " + p.position, done:false});
-      }  
+        if (p.position == "RB") {
+      $scope.availablePlayers.push({text:p.name + " - " + p.position + ", " + p.team, done:false});
+      }
      });
    });
 

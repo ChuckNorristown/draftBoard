@@ -3,8 +3,11 @@ function PlayerCtrl($scope) {
 
   $.getJSON('json/player-pool.json', function(data) {
     $.each(data.players.player, function(i, p) {
-        if (p.position == "Def")
+        if (p.position == "Def") {
       $scope.availablePlayers.push({text:p.name + " - " + p.position, done:false});
+      }  else {
+      $scope.availablePlayers.push({text:p.name + " - " + p.position + ", " + p.team, done:false});
+      }
      });
    });
 
@@ -25,7 +28,7 @@ function PlayerCtrl($scope) {
  
   $scope.draft = function() {
     var oldPlayers = $scope.availablePlayers;
-    $scope.availablePlayers = [];
+    $scope.availablePlayers = [Def];
     angular.forEach(oldPlayers, function(player) {
       if (!player.done) {
         $scope.availablePlayers.push(player);

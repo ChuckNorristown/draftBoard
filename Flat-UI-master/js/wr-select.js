@@ -26,7 +26,7 @@ function WRPlayerCtrl($scope) {
  
   $scope.draft = function() {
     var oldPlayers = $scope.availablePlayers;
-    $scope.availablePlayers = [Def];
+    $scope.availablePlayers = [];
     angular.forEach(oldPlayers, function(player) {
       if (!player.done) {
         $scope.availablePlayers.push(player);

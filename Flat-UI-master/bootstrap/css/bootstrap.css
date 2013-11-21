@@ -2038,7 +2038,7 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-  color: #333333;
+  color: #999999;
   background-color: #ffffff;
   border-color: #cccccc;
 }
@@ -2079,7 +2079,7 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-  color: #ffffff;
+  color: #999999;
   background-color: #428bca;
   border-color: #357ebd;
 }
@@ -2120,7 +2120,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-warning {
-  color: #ffffff;
+  color: #999999;
   background-color: #f0ad4e;
   border-color: #eea236;
 }
@@ -2161,7 +2161,7 @@ fieldset[disabled] .btn-warning.active {
 }
 
 .btn-danger {
-  color: #ffffff;
+  color: #999999;
   background-color: #d9534f;
   border-color: #d43f3a;
 }
@@ -2202,7 +2202,7 @@ fieldset[disabled] .btn-danger.active {
 }
 
 .btn-success {
-  color: #ffffff;
+  color: #999999;
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
@@ -2243,7 +2243,7 @@ fieldset[disabled] .btn-success.active {
 }
 
 .btn-info {
-  color: #ffffff;
+  color: #999999;
   background-color: #5bc0de;
   border-color: #46b8da;
 }
@@ -3228,11 +3228,11 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 260px;
+  min-width: 270px;
   max-height: 800px;
   overflow: hidden;
   overflow-y: auto;
-  padding: 5px 0;
+  padding: 5px 0 0 5px;
   margin: 2px 0 0;
   font-size: 14px;
   list-style: none;
@@ -3999,8 +3999,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav .caret {
-  border-top-color: #428bca;
-  border-bottom-color: #428bca;
+  border-top-color: #999999;
+  border-bottom-color: #999999;
 }
 
 .nav a:hover .caret {

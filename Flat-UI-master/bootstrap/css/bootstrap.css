@@ -3228,7 +3228,10 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 160px;
+  min-width: 260px;
+  max-height: 800px;
+  overflow: hidden;
+  overflow-y: auto;
   padding: 5px 0;
   margin: 2px 0 0;
   font-size: 14px;

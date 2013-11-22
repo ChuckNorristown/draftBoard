@@ -42,6 +42,7 @@
         <div ng-controller="RBPlayerCtrl">
           <button type="button" class="btn btn-primary btn-lg dropdown-toggle" <a href="" ng-click="draft()" href="#" data-toggle="dropdown">Runningbacks <span class="caret"></a></span></button>
           <ul class="dropdown-menu" role="menu">
+              <input type="text" class="form-control" placeholder="Search"></i>
             <li ng-repeat="player in availablePlayers">
               <input type="checkbox" ng-model="player.done">
               <span class="done-{{player.done}}">{{player.text}}</span>
@@ -58,6 +59,7 @@
         <div ng-controller="WRPlayerCtrl">
           <button type="button" class="btn btn-success btn-lg dropdown-toggle" <a href="" ng-click="draft()" href="#" data-toggle="dropdown">Wide Receivers <span class="caret"></a></span></button>
           <ul class="dropdown-menu" role="menu">
+              <input type="text" class="form-control" placeholder="Search"></i>
             <li ng-repeat="player in availablePlayers">
               <input type="checkbox" ng-model="player.done">
               <span class="done-{{player.done}}">{{player.text}}</span>
@@ -74,6 +76,7 @@
         <div ng-controller="TEPlayerCtrl">
           <button type="button" class="btn btn-info btn-lg dropdown-toggle" <a href="" ng-click="draft()" href="#" data-toggle="dropdown">Tight Ends <span class="caret"></a></span></button>
           <ul class="dropdown-menu" role="menu">
+              <input type="text" class="form-control" placeholder="Search"></i>
             <li ng-repeat="player in availablePlayers">
               <input type="checkbox" ng-model="player.done">
               <span class="done-{{player.done}}">{{player.text}}</span>
@@ -90,6 +93,7 @@
         <div ng-controller="DefPlayerCtrl">
           <button type="button" class="btn btn-warning btn-lg dropdown-toggle" <a href="" ng-click="draft()" href="#" data-toggle="dropdown">Defense/SPT <span class="caret"></a></span></button>
           <ul class="dropdown-menu" role="menu">
+              <input type="text" class="form-control" placeholder="Search"></i>
             <li ng-repeat="player in availablePlayers">
               <input type="checkbox" ng-model="player.done">
               <span class="done-{{player.done}}">{{player.text}}</span>
@@ -106,6 +110,7 @@
         <div ng-controller="KPlayerCtrl">
           <button type="button" class="btn btn-danger btn-lg dropdown-toggle" <a href="" ng-click="draft()" href="#" data-toggle="dropdown">Kickers <span class="caret"></a></span></button>
           <ul class="dropdown-menu" role="menu">
+              <input type="text" class="form-control" placeholder="Search"></i>
             <li ng-repeat="player in availablePlayers">
               <input type="checkbox" ng-model="player.done">
               <span class="done-{{player.done}}">{{player.text}}</span>

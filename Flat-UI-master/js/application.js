@@ -66,5 +66,18 @@ String.prototype.repeat = function(num) {
     $("[data-toggle='switch']").wrap('<div class="switch" />').parent().bootstrapSwitch();
     
   });
+
+    $(function() {
+      $('.tip').tooltip();
+      $('input, textarea').placeholder(); 
+      $( ".search-btn").mouseover(function(e) {
+        var $marginLefty = $('.form-input-slide');
+        $marginLefty.animate({  marginLeft: 0});
+      });
+      $( "#search-form" ).mouseleave(function(e) {
+        var $marginLefty = $('.form-input-slide');
+        $marginLefty.animate({  marginLeft: -$marginLefty.outerWidth()});
+      });
+    });
   
 })(jQuery);

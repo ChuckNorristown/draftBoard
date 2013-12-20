@@ -14,28 +14,8 @@
     <!-- Custom CSS for the 'Round About' Template -->
     <link href="bootstrap/css/round-about.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/football.ico">
-    <script>
-      function allowDrop(ev)
-      {
-      ev.preventDefault();
-      }
-
-      function drag(ev)
-      {
-      ev.dataTransfer.setData("Text",ev.target.id);
-      }
-
-      function drop(ev)
-      {
-      ev.preventDefault();
-      var data=ev.dataTransfer.getData("Text");
-      ev.target.appendChild(document.getElementById(data));
-      }
-    </script>
   </head>
-
   <body>
-
     <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
       <form class="navbar-form navbar-left" action="#" method="GET" id="search-form" role="search">
      <div class="form-group form-slide" style="overflow: hidden;">
@@ -48,11 +28,10 @@
           <ul class="nav navbar-nav">
             <div class="bs-example">
       <div class="btn-group">
-        <div ng-controller="QBPlayerCtrl" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div ng-controller="QBPlayerCtrl">
           <button type="button" class="btn btn-default btn-lg dropdown-toggle" <a href="" ng-click="draft()" href="#" data-toggle="dropdown">Quarterbacks <span class="caret"></a></span></button>
           <ul class="dropdown-menu" role="menu">
-            <li ng-repeat="player in availablePlayers" draggable="true"
-ondragstart="drag(event)">
+            <li ng-repeat="player in availablePlayers" draggable="true" ondragstart="drag(event)">
               <!-- <input type="radio" ng-model="player.done"> -->
               <span class="done-{{player.done}}">{{player.text}}</span>
             </li>
@@ -144,7 +123,6 @@ ondragstart="drag(event)">
         <div class="col-lg-12">
           <h1 class="page-header">Current Pick <small>...some angular</small></h1>
           <p>on deck...</p>
-          <!-- <p>??? <code>pull-right</code> class on the image to make it look good!</p> -->
         </div>
 
         <div class="col-lg-12">
@@ -157,7 +135,7 @@ ondragstart="drag(event)">
           <div class="col-lg-2 col-sm-4 col-sm-6">
                   <img class="img-circle img-responsive" src="http://placehold.it/200x200">
               <h3>Team 1 <small>name</small></h3>
-              <div class="well"></div>
+              <div class="well" dropzone="move string:text/plaine" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
           </div>
           <div class="col-lg-2 col-sm-4 col-sm-6">
                   <img class="img-circle img-responsive" src="http://placehold.it/200x200">
